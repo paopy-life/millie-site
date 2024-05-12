@@ -1,0 +1,174 @@
+/*shih tzu colors
+black= #474e5d
+white= #e3e0d1
+brown-red= #e66852
+green?= #bfd354
+*/
+body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    border-width: 0;
+}
+
+hr {
+    background: #e3e0d1;
+    border: dashed #bfd354 5px;
+    margin: 0;
+}
+
+.topsec {
+    height: 300px;
+    background: #e3e0d1;
+    color: #474e5d;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.pic-frame {
+    display: flex;
+    align-items: baseline;
+}
+
+h1 {
+    font-size: 4rem;
+    font: sans-serif;
+    text-align: center;
+    grid-area: 1 / 2 / 2 / 4;
+}
+
+.name {
+    color: #e66852;
+}
+
+h1, h2, h4 {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+}
+
+p {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: italic;
+}
+
+.topsec > p {
+    text-align: center;
+    grid-area: 2 / 2 / 3 / 4;
+}
+
+.bone-img {
+    height: 50px;
+    grid-area: 1 / 1  / 2 / 2;
+}
+
+.fish-img {
+    height: 50px;
+    grid-area:  2 / 4 / 3 / 5;
+    justify-self: right;
+}
+
+.secsec {
+    display: flex;
+    height: 300px;
+    background-color: #e66852;
+    padding-top: 30px;
+    justify-content: center;
+    align-content: center;
+    gap: 50px;
+}
+
+.secsec-text {
+    align-self: center;
+    font-size: 1.5rem;
+}
+
+#portrait {
+    height: 150px;
+    border-radius: 50%;
+    align-self: center;
+}
+
+.tofu-pic {
+    height: 40px;
+    align-self: center;
+}
+
+.midsec {
+    height: 220px;
+    width: 100%;
+    background-color: #474e5d;
+    color: #e3e0d1;
+    display: inline-flex;
+    justify-content: space-around;
+    padding-top: 30px;
+    margin: 0px;
+}
+
+.midsec h2 {
+    text-align: center;
+}
+
+.skill-list h2 {
+    text-align: center;
+}
+
+.lists {
+    padding-left: 10px;
+    list-style-type: none;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.botsec {
+    display: inline-flex;
+    height: 60px;
+    width: 100%;
+    background-color: #e3e0d1; 
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.signature {
+    color: #474e5d;
+    padding-right: 20px;
+}
+
+.paw-pic {
+    height: 30px;
+    align-self: center;
+}
+
+.italic-text {
+    font-style: italic;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2.5rem;
+        padding-top: 50px;
+    }
+    .secsec {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 400px;
+        width: 100%;
+        gap: 20px;
+    }
+    .secsec-text {
+        font-size: 1rem;
+    }
+    .container.midsec {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 600px;
+        width: 100%;
+    }
+    .lists {
+        padding-left: 100px;
+        padding-bottom: 30px;
+    }
+}
